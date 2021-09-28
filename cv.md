@@ -2,8 +2,8 @@
 Molod Yuliya
 ##### 2. Contacts:
  * email *vamoyu@mail.ru*
- * [telegram] (https://t.me/vamoyu)
- * [web] (https://vk.com/ymolod) 
+ * [telegram](https://t.me/vamoyu)
+ * [web](https://vk.com/ymolod) 
 ##### 3. About me:
 I want to learn web layout and start working in IT.\
 I enjoy learning frontend development and seeing the results of my work.
@@ -12,32 +12,33 @@ I enjoy learning frontend development and seeing the results of my work.
  * Object oriented programming
  * Database Basics
 ##### 5. Code examples:
-```
-//ИИ атакует наименьшей по значимости картой, защищается наибольшей. В идеале нужно при каждом ходе запоминать выбывшие карты противника
-//и максимальный урон, который он может принести, защищаясь картой, равной или приближенной по значимости максимально возможному урону.
-//Максимально возможный урон - разница между наибольшей оставшейся не руках картой соперника и наименьшей своей.
-console.log('------------------');
-console.log('   Start Game');
-console.log('------------------'); 
-var PlayerCards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var AICards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var PlayerFane = 0;
-var AIFane = 0;
-var card;
-//var last_playerCard = [];
-var Queue = [0, 1];
-var start = Queue[(Math.random() * Queue.length) | 0]; //переменная для определения очередности ходов
-console.log('Player cards: ', PlayerCards);
-console.log('AI cards: ', AICards);
-console.log('Player Fane: ', PlayerFane);
-console.log('AI Fane: ', AIFane);
-for (let i = 0; i < 12; ++i) {
-
+    //ИИ атакует наименьшей по значимости картой, защищается наибольшей. В идеале нужно при каждом ходе запоминать выбывшие карты противника
+    //и максимальный урон, который он может принести, защищаясь картой, равной или приближенной по значимости максимально возможному урону.
+    //Максимально возможный урон - разница между наибольшей оставшейся не руках картой соперника и наименьшей своей.
+    
     console.log('------------------');
-    console.log('     Round', i + 1);
-    console.log('------------------');
+    console.log('   Start Game');
+    console.log('------------------'); 
+    
+    var PlayerCards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    var AICards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    var PlayerFane = 0;
+    var AIFane = 0;
+    var card;
+    //var last_playerCard = [];
+    var Queue = [0, 1];
+    var start = Queue[(Math.random() * Queue.length) | 0]; //переменная для определения очередности ходов
+    console.log('Player cards: ', PlayerCards);
+    console.log('AI cards: ', AICards);
+    console.log('Player Fane: ', PlayerFane);
+    console.log('AI Fane: ', AIFane);
+    for (let i = 0; i < 12; ++i) {
 
-    if (start % 2 === 1) { //проверяем, кому выпало ходить первым
+        console.log('------------------');
+        console.log('     Round', i + 1);
+        console.log('------------------');
+
+        if (start % 2 === 1) { //проверяем, кому выпало ходить первым
 
         console.log('__Player attack__');
     } else {
@@ -73,9 +74,9 @@ for (let i = 0; i < 12; ++i) {
 
     start = (start + 1) % 2;   //передаем ход сопернику
      
-}
-Winner(PlayerFane, AIFane);
-function Player() {
+    }
+    Winner(PlayerFane, AIFane);
+    function Player() {
 
     var card = PlayerCards[(Math.random() * PlayerCards.length) | 0];
     console.log('Player card: ', card);
@@ -90,8 +91,8 @@ function Player() {
         }
     }
     return card;
-}
-function AI(i, start) {
+    }
+    function AI(i, start) {
 
     if (start % 2 === 0) {
         card = AICards.shift();
@@ -100,8 +101,8 @@ function AI(i, start) {
     }
     console.log('AI card: ', card);
     return card;
-}
-function Winner(PlayerFane, AIFane) {
+    }
+    function Winner(PlayerFane, AIFane) {
 
     if (PlayerFane < AIFane) {
 
@@ -126,7 +127,7 @@ function Winner(PlayerFane, AIFane) {
         console.log('     Dead heat!');
     }
 }
-```
+
 ##### 6. Work experience:
 *\*Expected...\**
 ##### 7. Education: 
