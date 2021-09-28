@@ -5,7 +5,8 @@ Molod Yuliya
  * [telegram] (https://t.me/vamoyu)
  * [web] (https://vk.com/ymolod) 
 ##### 3. About me:
-I want to learn web layout and start working in IT.
+I want to learn web layout and start working in IT.\
+I enjoy learning frontend development and seeing the results of my work.
 ##### 4. Skills:
  * С++, Phython, Java, JavaScript basics
  * Object oriented programming
